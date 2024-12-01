@@ -1,0 +1,223 @@
+# https://github.com/gurusabarish/hugo-profile/blob/master/exampleSite/config.yaml
+baseURL: https://www.jessicasloan.me
+languageCode: en-us
+title: Jessica Sloan
+theme: hugo-profile
+timeZone: America/New_York
+enableRobotsTXT: true
+
+outputs:
+  home:
+    - HTML
+  page:
+    - HTML
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+
+minify:
+  minifyOutput: true
+
+params:
+  title: Jessica Sloan
+  description: Personal Site
+  favicon: /images/js.png
+
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: dark
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    disableSearch: true
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: Hi, my name is
+    title: Jessica.
+    subtitle: I'm a senior infrastructure engineer.
+    content: I am a passionate infrastructure engineer who loves solving technical problems in an ever-evolving world.
+    image: /images/me.svg
+    bottomImage:
+      enable: true
+    roundImage: false
+    button:
+      enable: true
+      name: Resume
+      url: /resume.pdf
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/jsloan117
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/jms6/
+
+  about:
+    enable: true
+    title: About Me
+    image: /images/me.png
+    content: |-
+      I am a infrastructure engineer with a passion for problem solving and automation, with a background in computer science. I am currently working as a senior infrastructure engineer at [H&R Block](https://www.hrblock.com/) remotely in Ohio.
+
+      I have worked on multiple projects to automate tasks for our team and others. One of which is a way to automate building VM images for others based around packer.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - Azure
+        - Bash
+        - Chef
+        - Git
+        - Packer
+        - PowerShell
+        - Ruby
+        - TFE
+
+  experience:
+    enable: true
+    items:
+      - job: Senior Infrastructure Engineer
+        company: HR Block
+        companyUrl: https://www.hrblock.com/
+        date: Jun 2019 - Present
+        info:
+          enable: true
+          content: Worked as an Associate infrastructure engineer and Infrastructure engineer prior
+        content: |
+          I am currently working as a senior infrastructure engineer at [H&R Block](https://www.hrblock.com/) remotely.
+          - Oversee internal systems essential for daily operations.
+          - Collaborate not only with my immediate team but also with various departments across H&R Block, including development, networking, security, and management, to accomplish tasks and projects.
+          - Provide 24/7 on-call support for solutions where I am the primary Engineer.
+          - Maintain and support Linux and Windows operating systems.
+          - Diagnose and resolve a wide range of issues and services.
+
+      - job: Level 1 Support Technician
+        company: Codero
+        companyUrl: https://www.codero.com/
+        date: Jan 2018 - May 2019
+        info:
+          enable: false
+        content: |
+          Codero a web hosting company based out of Austin Texas. They offer everything from cloud computing to high-performance dedicated servers.
+          - Support Customers via Phone, Live Chat, and Ticketing system.
+          - Support Linux and Windows operating systems.
+          - Support cPanel/WHM & Plesk control panels.
+          - Diagnose and resolve a wide range of issues and services.
+
+      - job: Linux Support Analyst
+        company: A2 Hosting
+        companyUrl: https://www.a2hosting.com/
+        date: Dec 2013 - Jul 2017
+        info:
+          enable: true
+          content: Worked as a Linux Support Analyst & Compliance Specialist
+        content: |
+          A2 Hosting a web hosting company based out of Ann Arbor Michigan. They offer everything from a basic website to high-performance dedicated servers.
+          - As a Compliance Specialist:
+            - Worked remotely from home.
+            - Supported Customers via Phone, Live Chat, and Support Tickets.
+            - Monitored Exim mail queues and logs for spam and other malicious activity using nagios.
+            - Monitored our IP address for blacklisting issues and handled them based on our policies.
+            - Document procedures and policies for compromised accounts and blacklisting issues.
+            - Reviewed abusive accounts and proceeded accordingly per our procedures and policies.
+            - Worked with 3rd party abuse companies to take down malicious sites.
+            - Created bash scripts to automate information gathering from logs.
+          - As a Linux Support Analyst:
+            - Worked remotely from home.
+            - Supported Customers via Phone, Live Chat, and Support Tickets.
+            - Migrated client cPanel accounts from other hosts to our servers and internally.
+            - Assisted customers with pre-sales and sales questions.
+            - Provided server-side support for hosting services.
+            - Reviewed abusive accounts and proceeded accordingly per our procedures and policies.
+            - Worked with 3rd party abuse companies to take down malicious sites.
+
+  education:
+    enable: true
+    index: false
+    items:
+      - title: Bachelor of Information Technology and Cybersecurity
+        school:
+          name: Baker College
+          url: https://www.baker.edu/
+        date: 2011 - 2014 uncompleted
+
+      - title: High School - Information Technology and Cisco Systems
+        school:
+          name: Four County Career Center
+          url: https://www.fourcounty.net/
+        date: 2007 - 2009
+
+  achievements:
+    enable: true
+    items:
+      - title: CompTIA Linux+ (powered by LPI) Certification
+        content: Credential ID 3NH4XE6FLDFE1ZK8
+        url: https://www.credly.com/badges/dca732e5-4bbb-4bab-ae38-c2f066e7b5ab/public_url
+        image: /images/comptia-linux+.png
+      - title: LPIC-1, LPI
+        content: "Expired 2022 LPI ID: LPI000388652 Credential ID: af978vrtd6"
+        url: https://cs.lpi.org/caf/Xamman/certification/verify/LPI000388652/af978vrtd6
+        image: /images/lpic-1.png
+      - title: AWS Certified Solutions Architect - Associate
+        content: Expired 2022 Credential ID 1MSTRK52BMBQ1FC1
+        url: https://www.credly.com/badges/140a8f5f-71c2-4199-bb4e-579069dc1f7d/public_url
+        image: /images/aws-saa.png
+
+  projects:
+    enable: false
+
+  contact:
+    enable: true
+    btnName: Mail me
+    btnLink: mailto:jsloan117[at]gmail.com
+
+  footer:
+    recentPosts:
+      path: blogs
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/jsloan117
+      linkedin: https://www.linkedin.com/in/jms6/
+
+  terms:
+    read: Read
+    toc: Table Of Contents
+    copyright: All rights reserved
+    pageNotFound: Page not found
+    emailText: Check out this site
+
+  datesFormat:
+    article: Jan 2, 2006
+    articleList: Jan 2, 2006
+    articleRecent: Jan 2, 2006
